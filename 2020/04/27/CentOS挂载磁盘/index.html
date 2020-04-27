@@ -20,19 +20,21 @@
     var CONFIG = {"hostname":"duanjw.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="发际线逐渐上涨的程序员">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://duanjw.com/tags/index.html">
+  <meta name="description" content="本文使用阿里云CentOS7操作系统，在阿里云购买的存储需要自己手动挂载到主机上。 列出块设备信息lsblk命令列出块设备信息。块设备信息包括：硬盘、闪存盘、cd-ROM等等。 1234567[root@localhost ~]# lsblkNAME   MAJ:MIN RM SIZE RO TYPE MOUNTPOINTvda    253:0    0  40G  0 disk └─vda1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CentOS挂载磁盘">
+<meta property="og:url" content="http://duanjw.com/2020/04/27/CentOS%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98/index.html">
 <meta property="og:site_name" content="程序员DJW">
-<meta property="og:description" content="发际线逐渐上涨的程序员">
+<meta property="og:description" content="本文使用阿里云CentOS7操作系统，在阿里云购买的存储需要自己手动挂载到主机上。 列出块设备信息lsblk命令列出块设备信息。块设备信息包括：硬盘、闪存盘、cd-ROM等等。 1234567[root@localhost ~]# lsblkNAME   MAJ:MIN RM SIZE RO TYPE MOUNTPOINTvda    253:0    0  40G  0 disk └─vda1">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-04-21T09:39:41.000Z">
-<meta property="article:modified_time" content="2020-04-21T10:57:20.043Z">
+<meta property="article:published_time" content="2020-04-27T06:32:00.000Z">
+<meta property="article:modified_time" content="2020-04-27T11:30:28.771Z">
 <meta property="article:author" content="程序员DJW">
+<meta property="article:tag" content="CentOS">
+<meta property="article:tag" content="挂载磁盘">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://duanjw.com/tags/">
+<link rel="canonical" href="http://duanjw.com/2020/04/27/CentOS%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98/">
 
 
 <script id="page-configurations">
@@ -40,13 +42,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>tags | 程序员DJW
-</title>
+  <title>CentOS挂载磁盘 | 程序员DJW</title>
   
 
 
@@ -178,55 +179,156 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
-          <div class="content page posts-expand">
+          <div class="content post posts-expand">
             
 
     
-    
-    
-    <div class="post-block" lang="zh-CN">
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://duanjw.com/2020/04/27/CentOS%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="程序员DJW">
+      <meta itemprop="description" content="发际线逐渐上涨的程序员">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序员DJW">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          CentOS挂载磁盘
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">tags
-</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
 
-<div class="post-meta">
+              <time title="创建时间：2020-04-27 14:32:00 / 修改时间：19:30:28" itemprop="dateCreated datePublished" datetime="2020-04-27T14:32:00+08:00">2020-04-27</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/04/27/CentOS%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/27/CentOS%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
   
 
-</div>
+        </div>
+      </header>
 
-</header>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+        <p>本文使用阿里云CentOS7操作系统，在阿里云购买的存储需要自己手动挂载到主机上。</p>
+<h2 id="列出块设备信息"><a href="#列出块设备信息" class="headerlink" title="列出块设备信息"></a>列出块设备信息</h2><p><code>lsblk</code>命令列出块设备信息。<br>块设备信息包括：硬盘、闪存盘、cd-ROM等等。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# lsblk</span><br><span class="line">NAME   MAJ:MIN RM SIZE RO TYPE MOUNTPOINT</span><br><span class="line">vda    253:0    0  40G  0 disk </span><br><span class="line">└─vda1 253:1    0  40G  0 part &#x2F;</span><br><span class="line">vdb    253:16   0  60G  0 disk </span><br><span class="line">└─vdb1 253:17   0  60G  0 part &#x2F;file_storage_data</span><br><span class="line">vdc    253:32   0  50G  0 disk</span><br></pre></td></tr></table></figure>
+<p>从以上信息可以看出共有三个块设备（vda、vdb、vdc），除了vdc没有挂载，其它两个都已经被挂载到主机。  </p>
+<p>下面，开始把vdc挂载到主机。</p>
+<a id="more"></a>
+<h2 id="挂载磁盘"><a href="#挂载磁盘" class="headerlink" title="挂载磁盘"></a>挂载磁盘</h2><ol>
+<li>格式化磁盘的类型<br>vdc默认在<code>/dev/vdc</code>目录中，先把<code>/dev/vdc</code>格式化成<code>ext4</code>类型。<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 格式化成ext4类型</span></span><br><span class="line">mkfs -t ext4 /dev/vdc</span><br></pre></td></tr></table></figure></li>
+<li>创建要挂载的目录<code>mnt_data</code><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir /mnt_data</span><br></pre></td></tr></table></figure></li>
+<li>挂载磁盘到<code>mnt_data</code><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mount /dev/vdc /mnt_data</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="配置开机自动挂载"><a href="#配置开机自动挂载" class="headerlink" title="配置开机自动挂载"></a>配置开机自动挂载</h2><p>如果不配置开机自动挂载，当重启主机后，挂载的磁盘就消失了。<br>修改<code>/etc/fstab</code>，在文件最后添加一行：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/dev/vdc /mnt_data ext4 defaults 0 0</span><br></pre></td></tr></table></figure>
+
+<h2 id="挂载完成"><a href="#挂载完成" class="headerlink" title="挂载完成"></a>挂载完成</h2><p>使用<code>df -h</code>查看磁盘使用空间。可以看到新挂载的磁盘<code>/mnt_data</code>。</p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
       
-      
-      <div class="post-body">
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-              目前共计 12 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/CentOS/" style="font-size: 21px; color: #6f6f6f">CentOS</a> <a href="/tags/Docker/" style="font-size: 30px; color: #111">Docker</a> <a href="/tags/Docker%E6%B8%85%E7%90%86/" style="font-size: 12px; color: #ccc">Docker清理</a> <a href="/tags/Hexo/" style="font-size: 21px; color: #6f6f6f">Hexo</a> <a href="/tags/Linux/" style="font-size: 12px; color: #ccc">Linux</a> <a href="/tags/Mac/" style="font-size: 12px; color: #ccc">Mac</a> <a href="/tags/Markdown/" style="font-size: 12px; color: #ccc">Markdown</a> <a href="/tags/NexT/" style="font-size: 12px; color: #ccc">NexT</a> <a href="/tags/Oracle/" style="font-size: 12px; color: #ccc">Oracle</a> <a href="/tags/Oracle12c/" style="font-size: 12px; color: #ccc">Oracle12c</a> <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" style="font-size: 21px; color: #6f6f6f">个人博客</a> <a href="/tags/%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98/" style="font-size: 12px; color: #ccc">挂载磁盘</a>
-            </div>
-          </div>
-        
+      <div style="display: inline-block;">
+        <img src="http://q92oqk2k2.bkt.clouddn.com/1.jpg" alt="程序员DJW 微信支付">
+        <p>微信支付</p>
       </div>
       
-      
-      
-    </div>
-    
+      <div style="display: inline-block;">
+        <img src="http://q92oqk2k2.bkt.clouddn.com/2.jpg" alt="程序员DJW 支付宝">
+        <p>支付宝</p>
+      </div>
 
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>程序员DJW
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://duanjw.com/2020/04/27/CentOS%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98/" title="CentOS挂载磁盘">http://duanjw.com/2020/04/27/CentOS挂载磁盘/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/CentOS/" rel="tag"># CentOS</a>
+              <a href="/tags/%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98/" rel="tag"># 挂载磁盘</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/04/26/Markdown%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" rel="prev" title="Markdown使用教程">
+      <i class="fa fa-chevron-left"></i> Markdown使用教程
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
     
-    
-    
+  </article>
+  
+  
+  
+
 
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -273,6 +375,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#列出块设备信息"><span class="nav-number">1.</span> <span class="nav-text">列出块设备信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#挂载磁盘"><span class="nav-number">2.</span> <span class="nav-text">挂载磁盘</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置开机自动挂载"><span class="nav-number">3.</span> <span class="nav-text">配置开机自动挂载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#挂载完成"><span class="nav-number">4.</span> <span class="nav-text">挂载完成</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
